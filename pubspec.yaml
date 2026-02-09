@@ -1,0 +1,105 @@
+name: digitaldarzi
+description: A Digital Tailor App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ✅ REQUIRED for Material/Cupertino localizations
+  flutter_localizations:
+    sdk: flutter
+
+  shared_preferences: ^2.2.2
+  video_player: ^2.8.4
+
+  # Only pick image (crop we will do in our own UI)
+  image_picker: ^1.0.7
+
+  # ✅ Shimmer (for gold shimmer text)
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # ✅ Your existing file (keep if this file exists at assets/intro.mp4)
+    - assets/intro.mp4
+
+    # ✅ IMPORTANT: these fix the red X / unable to load asset issue
+    - assets/images/
+
+    # ✅ Fonts folder (already needed)
+    - assets/fonts/
+
+  fonts:
+    - family: AASameer
+      fonts:
+        - asset: assets/fonts/AA Sameer Rafiya Unicode Regular.ttf
+
+    - family: Aadil
+      fonts:
+        - asset: assets/fonts/Aadil Aadil.ttf
+
+    - family: AlFars
+      fonts:
+        - asset: assets/fonts/AlFars Regular.ttf
+
+    - family: BlakaHollow
+      fonts:
+        - asset: assets/fonts/BlakaHollow-Regular.ttf
+
+    - family: BlakaInk
+      fonts:
+        - asset: assets/fonts/BlakaInk-Regular.ttf
+
+    - family: CairoPlay
+      fonts:
+        - asset: assets/fonts/CairoPlay-VariableFont_slnt,wght.ttf
+
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf
+        - asset: assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf
+
+    - family: Katibeh
+      fonts:
+        - asset: assets/fonts/Katibeh-Regular.ttf
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+
+    - family: Nabla
+      fonts:
+        - asset: assets/fonts/Nabla-Regular-VariableFont_EDPT,EHLT.ttf
+
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-VariableFont_wdth,wght.ttf
+        - asset: assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf
+
+    - family: NotoSerif
+      fonts:
+        - asset: assets/fonts/NotoSerif-VariableFont_wdth,wght.ttf
+        - asset: assets/fonts/NotoSerif-Italic-VariableFont_wdth,wght.ttf
+
+    - family: Oi
+      fonts:
+        - asset: assets/fonts/Oi-Regular.ttf
+
+    - family: ReemKufiFun
+      fonts:
+        - asset: assets/fonts/ReemKufiFun-VariableFont_wght.ttf
+
+    # ✅ یہاں سے نیچے اپنی باقی fonts entries (جو پہلے تھیں) ویسے ہی paste کر دو
